@@ -3,7 +3,7 @@ class Genre
   @@all = []
 
   def initialize(name)
-    @genre = name
+    @name = name
     save
   end
 
