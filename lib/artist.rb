@@ -34,4 +34,7 @@ class Artist
      song.artist = self if song.artist.nil?
   end
 
+  def genres
+  end
+
 end
