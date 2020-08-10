@@ -25,4 +25,11 @@ class Genre
     new_genre
   end
 
+  def artists
+    artists = self.songs.collect do |song|
+      song.artist
+    end
+    artist.uniq
+  end
+
 end
