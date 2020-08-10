@@ -35,7 +35,10 @@ class Artist
   end
 
   def genres
-    @genres
+    genres = self.songs.collect do |song|
+      song.genre
+    end
+    genres.uniq
   end
 
 end
