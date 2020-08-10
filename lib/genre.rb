@@ -2,8 +2,8 @@ class Genre
   attr_accessor :genre
   @@all = []
 
-  def initialize(genre)
-    @genre = genre
+  def initialize(name)
+    @genre = name
     save
   end
 
