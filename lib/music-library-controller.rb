@@ -7,7 +7,7 @@ class MusicLibraryController
   def call
     input = ""
     until input == "exit"
-      puts "Please enter action"
+      puts "Welcome to your music library!"
       input = gets.chomp
       case input
       when "list songs"
@@ -67,4 +67,4 @@ class MusicLibraryController
     end
   end
 
-end 
+end
