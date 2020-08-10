@@ -5,7 +5,7 @@ class MusicLibraryController
   end
 
   def call
-    input = ""
+    input = ''
 
     while input != 'exit'
       puts "Welcome to your music library!"
@@ -18,26 +18,27 @@ class MusicLibraryController
       puts "To quit, type 'exit'."
       puts "What would you like to do?"
       input = gets.chomp
-      
+
       case input
-      when "list songs"
-        list_songs
-      when "list artists"
-        list_artists
-      when "list genres"
-        list_genres
-      when "play song"
-        play_song
-      when "list artist"
-        list_artist
-      when "list genre"
-        list_genre
-      when "exit"
-        puts "Goodbye"
+      when 'list songs'
+        self.list_songs
+      when 'list artists'
+        self.list_artists
+      when 'list genres'
+        self.list_genres
+      when 'list artists'
+        self.list_artists
+      when 'list artist'
+        self.list_songs_by_artist
+      when 'list genre'
+        self.list_songs_by_genre
+      when 'play song'
+        self.play_song
       else
-        puts "invalid action"
+        "Type in a valid request please"
       end
     end
+
   end
 
   def list_songs
