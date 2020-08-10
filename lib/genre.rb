@@ -20,7 +20,7 @@ class Genre
   end
 
   def self.create(name)
-    new_genre = Genre.new(genre)
+    new_genre = Genre.new(name)
     new_genre
   end
 
