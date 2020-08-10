@@ -13,7 +13,7 @@ class MusicLibraryController
       puts "To list all of the genres in your library, enter 'list genres'."
       puts "To play a song in your library, enter 'play song'."
       puts "To list all of the songs by a particular artist, enter 'list artist'."
-      
+
       input = gets.chomp
       case input
       when "list songs"
