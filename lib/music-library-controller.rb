@@ -8,6 +8,7 @@ class MusicLibraryController
     input = ""
     until input == "exit"
       puts "Welcome to your music library!"
+      puts "To list all of your songs, enter 'list songs'."
       input = gets.chomp
       case input
       when "list songs"
